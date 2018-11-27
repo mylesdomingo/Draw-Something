@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="assets/style.css">
+        <script src="assets/matter.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>
+        <script src="assets/sketch.js" defer></script>
+        <script src="assets/drawing.js" defer ></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono">
+
+    </head>
+    <body>
+
+        <div id = "sketch-holder"></div>
+        <p id = "message"></p>
+        <form>
+            <input id = "draw" autocomplete="off" pname="draw" type="text" maxlength="100" placeholder="Draw Something!" aria-labelledby="quick-draw">
+            <button class = "button button-large" type="submit">
+            <div id ="center">Draw</div></button>
+        </form>
+        <div class="loading" id ="loading"><div></div><div></div><div></div><div></div></div>
+    </body>
+</html>

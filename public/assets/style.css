@@ -1,0 +1,118 @@
+
+@font-face {
+	font-family: Hand-1;
+	src: url("fonts/hand-1.otf") format("opentype");
+}
+@font-face {
+	font-family: Hand-2;
+	src: url("fonts/hand-2.otf") format("opentype");
+}
+@font-face {
+	font-family: Hand-3;
+	src: url("fonts/hand-3.otf") format("opentype");
+}
+
+body {
+  font-family: Hand-1, "Helvetica Neue", helvetica, arial, sans-serif;
+  margin: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+input {
+    font-family: Hand-1;
+}
+form {
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1000px;
+}
+
+input {
+  display: block;
+  margin-bottom: 50px;
+  padding: 5px;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  font-size: 16px;
+}
+input#draw {
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    margin: 2rem auto .25rem;
+    border: none;
+    border-bottom: 3px solid transparent;
+    padding: 0;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    font-size: 4em;
+    background: white;
+}
+input#draw:focus {
+    outline: none;
+}
+button {
+    margin: 1rem auto 2rem;
+    border: 0;
+    background: none;
+
+}
+.button {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0 3px 18px 6px;
+    height: 50px;
+    width: 47px;
+    user-select: none;
+    background-repeat: no-repeat;
+    background-size: 94px 339px;
+    background-position: 0 0;
+    color: white;
+    text-align: center;
+    font-weight: normal;
+    font-size: 18px;
+    font-family: 'Roboto Mono', sans-serif;
+    cursor: pointer;
+    overflow: hidden;
+}
+.button.button-large {
+    background-image: url('./images/buttons_large.svg');
+}
+.button.button-large {
+    height: 58px;
+    width: 200px;
+    background-size: 400px 142px;
+    padding-top: 0;
+    padding-left: 9px;
+    padding-right: 8px;
+}
+.button.button-large:active {
+    background-position: -200px 0;
+}
+.button.button-large:active {
+    padding-left: 3px;
+}
+.button.button-large:active div {
+    position: relative;
+    top: 8px;
+}
+button:focus {
+    outline: none;
+}
+
+#message{
+    font-family: Hand-2;
+    font-size: 24pt;
+    margin-bottom: 0;
+}
