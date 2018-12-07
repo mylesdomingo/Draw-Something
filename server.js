@@ -10,6 +10,7 @@ app.listen(port, () => {
     console.log(`Example app listening on port ${port}!`)
 });
 
+//LOCAL FILE SEARCH ONLY, use QuickDraw Components API for faster runtime.
 
 let all_drawings = {}
 let files = fs.readFileSync('categories.txt').toString().split("\n");
